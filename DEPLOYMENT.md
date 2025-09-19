@@ -120,13 +120,13 @@ If you need to deploy manually:
 
 ```bash
 # Build the application
-npm run build
+yarn build
 
 # Test the build locally
-npm run preview
+yarn preview
 
 # Deploy to GitHub Pages (if using gh-pages package)
-npm run deploy
+yarn deploy
 ```
 
 ### 🚨 Troubleshooting

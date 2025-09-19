@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "type-check": "vue-tsc --noEmit",
     "lint": "echo \"No linter configured yet\"",
-    "deploy": "npm run build && echo \"Build completed - ready for GitHub Pages deployment\""
+    "deploy": "yarn build && echo \"Build completed - ready for GitHub Pages deployment\""
   },
   "dependencies": {
     "@heroicons/vue": "^2.2.0",
