@@ -53,7 +53,7 @@ The deployment is triggered automatically on:
 
 #### Workflow Steps:
 
-1. **Build Matrix** - Tests on Node.js 18.x and 20.x
+1. **Build Matrix** - Tests on Node.js 20.x and 22.x
 2. **Type Checking** - Validates TypeScript code
 3. **Linting** - Code quality checks (optional)
 4. **Security Audit** - Dependency vulnerability scan

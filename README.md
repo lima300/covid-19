@@ -96,7 +96,7 @@ src/
 
 ### Prerequisites
 
-- **Node.js** (v18.0.0 or higher)
+- **Node.js** (v20.19.0 or higher)
 - **Yarn** or **npm**
 - **Git**
 
