@@ -61,7 +61,7 @@ interface Props {
   subtitle?: string;
 }
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
   title: "COVID-19 Trends",
   subtitle: "Historical data for the selected country",
 });

@@ -89,6 +89,12 @@ export const generateMockCountryStats = (
 ): CountryStatsResponse[] => {
   const baseData =
     mockCountries.find((c) => c.Country === countryName) || mockCountries[0];
+  
+  // Type safety check
+  if (!baseData) {
+    throw new Error('No mock data available');
+  }
+  
   const historicalData: CountryStatsResponse[] = [];
   const today = new Date();
 
