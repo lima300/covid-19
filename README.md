@@ -372,9 +372,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 **Otavio Lima**
 
 - 🌐 Portfolio: [Your Portfolio URL]
-- 💼 LinkedIn: [Your LinkedIn Profile]
-- 📧 Email: [Your Email]
-- 🐱 GitHub: [@yourusername]
+- 💼 LinkedIn: [https://www.linkedin.com/in/otavio-lima-soares/]
+- 📧 Email: [otavio.lima.vga@gmail.com]
+- 🐱 GitHub: [@lima300]
 
 ---
 
