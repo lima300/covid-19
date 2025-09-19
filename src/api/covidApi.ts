@@ -42,7 +42,7 @@ export const getGlobalStats = async (): Promise<SummaryResponse> => {
         NewRecovered: globalData.todayRecovered || 0,
         TotalRecovered: globalData.recovered || 0,
       },
-      Countries: countriesData.slice(0, 20).map((country: any) => ({
+      Countries: countriesData.map((country: any) => ({
         Country: country.country,
         CountryCode: country.countryInfo.iso2 || "",
         Slug: country.country.toLowerCase().replace(/\s+/g, "-"),
@@ -69,7 +69,7 @@ export const getCountries = async (): Promise<
 > => {
   try {
     const response = await apiClient.get("/countries");
-    return response.data.slice(0, 20).map((country: any) => ({
+    return response.data.map((country: any) => ({
       Country: country.country,
       Slug: country.country.toLowerCase().replace(/\s+/g, "-"),
       ISO2: country.countryInfo.iso2 || "",

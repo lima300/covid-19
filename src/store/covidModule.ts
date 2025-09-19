@@ -125,7 +125,12 @@ const covidModule = {
       return state.countries
         .map((country: Country) => country.Country)
         .filter((country: string) => country && country.trim() !== "")
-        .sort();
+        .filter(
+          (country: string) =>
+            !country.includes("Diamond Princess") &&
+            !country.includes("MS Zaandam")
+        ) // Filter out cruise ships
+        .sort((a: string, b: string) => a.localeCompare(b));
     },
 
     isLoading: (state: CovidState): boolean => state.loading,
