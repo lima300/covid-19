@@ -18,7 +18,9 @@ const covidModule = {
     countryStats: [],
     loading: false,
     error: null,
-    darkMode: localStorage.getItem("darkMode") === "true" || false,
+    darkMode: localStorage.getItem("darkMode")
+      ? localStorage.getItem("darkMode") === "true"
+      : window.matchMedia("(prefers-color-scheme: dark)").matches,
   }),
 
   mutations: {
